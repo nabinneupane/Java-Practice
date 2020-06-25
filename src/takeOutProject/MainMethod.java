@@ -29,7 +29,7 @@ public class MainMethod {
 		int input = sc.nextInt(); 
 		
 		
-		if (input < 10 )
+		if (input < 10 || input > 100 )
 		{
 			System.out.println(" Number of people are invalid. Sorry  ");
 			System.out.println("##### END OF THE PROGRAM #####");
