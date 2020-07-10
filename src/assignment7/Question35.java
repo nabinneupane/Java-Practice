@@ -24,8 +24,8 @@ public class Question35 {
 		
 		
 		
-		String strArr = Arrays.toString(arr); 
-		System.out.println("\nThe given array is: " + strArr);
+		
+		System.out.println("\nThe given array is: " + Arrays.toString(arr));
 		
 		
 		obj.findSecondLargest(arr);

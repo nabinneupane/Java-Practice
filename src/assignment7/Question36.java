@@ -28,8 +28,8 @@ public class Question36 {
 			
 			
 			
-			String strArr = Arrays.toString(arr); 
-			System.out.println("\nThe given array is: " + strArr);
+			
+			System.out.println("\nThe given array is: " + Arrays.toString(arr));
 			
 			
 			return arr;
@@ -42,6 +42,7 @@ public class Question36 {
 			Set<Integer> newSet = new HashSet <Integer>(); 
 			
 			//makesure multiple repeated element are only printed once. 
+			
 			Set<Integer> finalResult = new HashSet<Integer>(); 
 			
 			System.out.print("\n\n The repeating element in the array are: ");

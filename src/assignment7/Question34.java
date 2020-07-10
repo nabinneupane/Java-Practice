@@ -1,5 +1,6 @@
 package assignment7;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -10,48 +11,42 @@ import java.util.Scanner;
  **/
 public class Question34 {
 	
-	static Question34 obj = new Question34(); 
+	
 
-public  void arrInput(Scanner scan, int [] arr) {
+public  int[] arrInput(Scanner scan, int [] arr) {
 		
 		
 		System.out.println("This program accepts " + (arr.length+1) + " items");
+		
+		
 		for (int i=0; i<arr.length; i++ )
 		{
 			System.out.print("\n Enter " + i + " item: ");
 			arr[i] = scan.nextInt(); 
 			
-			
 		}
-		
-		
-		obj.displayOriginal(arr);
-		
-		obj.displayReverse(arr); 
-		
-		
+		return arr; 
 	}
 	
 
-	public void displayOriginal(int[] arr)
-	{
-		System.out.println("\n\n The order of element in array : ");
-		
-		for (int i=0;i< arr.length; i++ )
-		{
-			System.out.print("\t"+ arr[i]+ " ");
-		}
-	}
+	
 	
 	
 	public void displayReverse(int[] arr)
 	{
 		System.out.println("\n\n Printing array element in reverse order:");
 		
-		for (int i=arr.length-1; i>=0; i--)
+		int end= arr.length-1; 
+		
+		for (int i=0; i< arr.length/2; i++)
 		{
-			System.out.print("\t" + arr[i] + " ");
+			var temp =arr[i];
+			arr[i] = arr[end]; 
+			arr[end] = temp; 
+			end -=1; 
 		}
+		
+		System.out.println("\n After reverse order is : " + Arrays.toString(arr));
 		
 	}
 	
@@ -60,11 +55,19 @@ public  void arrInput(Scanner scan, int [] arr) {
 	{
 		Scanner sc  = new Scanner(System.in); 
 		
-		
+	 Question34 obj = new Question34(); 
 		
 		int [] newArr = new int [5]; 
 		
-		obj.arrInput(sc, newArr);
+		int [] arr; 
+		
+		arr =	obj.arrInput(sc, newArr);
+		
+		
+		System.out.println("\n Original array is : " + Arrays.toString(arr));
+		
+		obj.displayReverse(arr); 
+		
 	}
 	
 	
