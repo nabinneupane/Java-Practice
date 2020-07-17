@@ -5,9 +5,12 @@ This contains various questions that are solved in Java Programming Languages.
 
 
 
-To refer to the questions and its answers please check in the Questions.docx file and find the corresponding answers in the src folder. 
+To refer to the questions and its answers please check the following: 
 
 
-Answer to Banking Project.docx : src => projectOne
 
-Answer to Take Out project.docx : src => takeOutProject
+
+Answers to Questions.docx file : src =>  Assignment(1-8)
+Answer to Banking Project.docx file : src => projectOne
+
+Answer to Take Out project.docx file : src => takeOutProject
