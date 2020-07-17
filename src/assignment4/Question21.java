@@ -41,11 +41,12 @@ public class Question21 {
 				case 7: 
 					System.out.println("Today is Saturday.");
 					break;
+					
 				}
 				break; 
 			}
 			else 
-				continue; 
+				System.out.println("Number not in range. Please enter 0-7. \n");
 		}
 		
 		

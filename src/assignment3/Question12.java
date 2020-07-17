@@ -9,14 +9,27 @@ public class Question12 {
 		
 		Scanner input  = new Scanner(System.in); 
 		
-		System.out.print(" Enter your Name: ");
-		String name = input.nextLine();
-		
-		System.out.print("\n Enter your Nationality: ");
-		String nationality = input.nextLine();
+//		System.out.print(" Enter your Name: ");
+//		String name = input.nextLine();
+//		
+//		System.out.print("\n Enter your Nationality: ");
+//		String nationality = input.nextLine();
+//		
+//		System.out.print("\n Enter your Roll Number: ");
+//		int roll = input.nextInt(); 
+
 		
 		System.out.print("\n Enter your Roll Number: ");
 		int roll = input.nextInt(); 
+		
+		input.nextLine();
+		System.out.print("\n Enter your Nationality: ");
+		String nationality = input.nextLine();
+		
+		
+		
+		System.out.print("\n Enter your Name: ");
+		String name = input.nextLine();
 		
 		System.out.println("\n========================================");
 		
