@@ -1,5 +1,6 @@
 package assignment8;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -23,7 +24,7 @@ public class Question42 {
 		
 		System.out.print("\n\t Enter a word to find dublicates letter in it: ");
 		
-		String letter = scan.nextLine(); 
+		String letter = scan.next(); 
 		
 		obj.printDublicateWord(letter);
 		scan.close(); 
@@ -32,16 +33,18 @@ public class Question42 {
 	
 	public void printDublicateWord(String letter)
 	{
-		String[] ss = letter.split(" "); 
+		String[] ss = letter.split("");
+		
 		
 		Set<String> newSet = new HashSet<>(); 
 		Set <String> output = new HashSet<>();
-		for (String i: ss)
+		for(String i: ss)
 		{
-			if(newSet.add(i)== false)
-				output.add(i); 
+			if(newSet.add(i) == false)
+				output.add(i);
+			
 		}
-		
+
 		System.out.println("\n\n===================\n");
 		for(String i:output)
 			System.out.print(i + " ");
